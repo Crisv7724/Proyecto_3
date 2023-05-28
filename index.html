@@ -14,8 +14,6 @@
     <div id="wrapper">
             <!-- Sidebar -->
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-    
-
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                     <div class="sidebar-brand-icon rotate-n-15">
                         <i class="fa-solid fa-cloud-sun"></i>
@@ -103,9 +101,164 @@
                         <span>Lugares</span></a>
                 </li>
             </ul>
-            <!-- Fin Sidebar -->
+            <!-- Fin Sidebar -->   
     
-    </div>  
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+                    <!-- Buscador -->
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                              <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-primary" type="submit">Buscar</button>
+                              </form>
+                            </div>
+                          </nav>
+
+                    </nav>
+                    <!-- Fin buscador -->
+    
+                    <!-- contenido -->
+                    <div class="container-fluid">
+    
+    
+                        <div class="row">
+
+
+                                                        <div class="col-xl-4 col-lg-5">
+                                                            <div class="card shadow mb-4">
+                                                                <div
+                                                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                                    <h6 class="m-0 font-weight-bold text-primary">Lugar</h6>
+
+                                                                </div>
+
+                                                                <div class="card-body">
+                                                                    <div class="chart-pie pt-4 pb-2">
+                                                                        <canvas id="myPieChart"></canvas>
+                                                                    </div>
+                                                                    <div class="mt-4 text-center small">
+                            
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+   
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="card shadow mb-4">
+
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">Clima</h6>
+                                        <div class="dropdown no-arrow">
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                               
+                                            </a>
+   
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="chart-area">
+                                            <canvas id="myAreaChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+
+                        <div class="row">
+    
+                            <!-- Cards -->
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    Índice UV</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-sun fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    Sensación Termica</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">14ºC</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-temperature-half fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    Humedad</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">68%</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-droplet fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                    visibilidad</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">33 km</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-eye fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+  
+                        <!-- Fin Cards -->    
+
+                </div>
+                <!-- Fin Contenidos -->
+
+             <!-- Footer -->
+             <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                   <div class="copyright text-center my-auto">
+                       <span>Copyright &copy; Amaya Haddad | Cristóbal Varela | Gerardo Romeny</span>
+                   </div>
+               </div>
+           </footer>
+           <!-- End of Footer -->              
+        </div>
+    </div>
+</div> 
+    
     
     <!-- links -->
     <script src="./assets/js/main.js"></script>
