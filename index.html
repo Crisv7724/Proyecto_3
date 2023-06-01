@@ -111,8 +111,8 @@
                         <nav class="navbar bg-body-tertiary">
                             <div class="container-fluid">
                               <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                                <button class="btn btn-primary" type="submit">Buscar</button>
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="city" name="city"/>
+                                <button id="get" class="btn btn-primary" type="submit">Buscar</button>
                               </form>
                             </div>
                           </nav>
@@ -120,7 +120,6 @@
                     </nav>
                     <!-- Fin buscador -->
     
-
                     <!-- contenido -->
                     <div class="container-fluid">
                         <div class="row">
@@ -134,9 +133,9 @@
 
                                                                 <div class="card-body">
                                                                     <div class="mt-4 text-center small">
-                                                                        <h4>Lugar, País</h4>
-                                                                        <h1>18º</h1>
-                                                                        <p>Máx:19º Min:10º</p>
+                                                                        <h4> <span id="cityName">-</span>, <span id="country">-</span></h4>
+                                                                        <h1><span id="temp">-</span></h1>
+                                                                        <p>Máx: <span id="maxTemp">-</span> Min:<span id="minTemp">-</span></p>
                                                                     </div>    
                                                                 </div>
                                                             </div>
@@ -154,7 +153,8 @@
 
                                     <div class="card-body">
                                         <div class="chart-area">
-                                            <canvas id="myAreaChart"></canvas>
+                                            <canvas id="grafico">
+                                            </canvas>
                                         </div>
                                     </div>
                                 </div>
